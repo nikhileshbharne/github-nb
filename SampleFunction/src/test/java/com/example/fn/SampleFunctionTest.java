@@ -9,7 +9,7 @@ public class SampleFunctionTest {
         testing.thenRun(SampleFunctionTest.class, "handleRequest");
 
         FnResult result = testing.getOnlyResult();
-        assertEquals("GoodMorning, world!", result.getBodyAsString());
+        assertEquals("Goodmorning, world!", result.getBodyAsString());
     }
 
 }
