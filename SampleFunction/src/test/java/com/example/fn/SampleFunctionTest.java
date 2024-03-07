@@ -12,7 +12,7 @@ public class SampleFunctionTest {
     @Test
     public void shouldReturnGreeting() {
         testing.givenEvent().enqueue();
-        testing.thenRun(SampleFunctionTest.class, "handleRequest");
+        testing.thenRun(SampleFunction.class, "sampleMethod");
 
         FnResult result = testing.getOnlyResult();
         assertEquals("Goodmorning, world!", result.getBodyAsString());
